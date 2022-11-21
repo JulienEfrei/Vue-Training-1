@@ -1,12 +1,13 @@
 <template>
     <div class="card">
         <div class="card__image">
-            <img :src="props.image" alt="coffee" />
+        <img :src="props.image" alt="coffee" />
         </div>
         <div class="card__content">
-            <h2 class="card__title">{{ props.name }}</h2>
-            <p class="card__price">{{ props.price }}</p>
-            <p class="card__isCold">{{ props.isCold }}</p>
+        <h2 class="card__title">{{ props.name }}</h2>
+        <p class="card__price">{{ props.price }}</p>
+        <p class="card__isCold" v-if="props.isCold == false">Hot</p>
+        <p class="card__isCold" v-if="props.isCold">Cold</p>
         </div>
     </div>
 </template>
