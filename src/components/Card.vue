@@ -6,8 +6,7 @@
         <div class="card__content">
         <h2 class="card__title">{{ props.name }}</h2>
         <p class="card__price">{{ props.price }}</p>
-        <p class="card__isCold" v-if="props.isCold == false">Hot</p>
-        <p class="card__isCold" v-if="props.isCold">Cold</p>
+        <p blabla >{{props.isCold ? 'Cold' : 'Hot'}}</p>
         </div>
     </div>
 </template>
